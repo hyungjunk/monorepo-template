@@ -1,9 +1,12 @@
 {
-  "name": "js-ts-monotrepos",
+  "name": "monorepo-template",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:mike-north/js-ts-monorepos.git",
+  "repository": "git@github.com:hyungjunk/monorepo-template.git",
   "author": "Mike North <michael.l.north@gmail.com>",
   "license": "BSD-2-Clause",
-  "private": true
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
 }
