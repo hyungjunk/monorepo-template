@@ -1,1 +1,2 @@
 packages/*/tests/*.ts
+node_modules/
