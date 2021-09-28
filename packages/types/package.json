@@ -8,13 +8,15 @@
   },
   "scripts": {
     "clean": "rimraf dist *.tsbuildinfo",
-    "build": "tsc -b .",
-    "test": "jest",
-    "lint": "eslint ./src --ext js,ts"
+    "build": "scripty",
+    "test": "scripty",
+    "lint": "scripty"
+  },
+  "scripty": {
+    "path": "../../scripts/packages"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.15.6",
-    "@babel/preset-typescript": "^7.15.0",
-    "jest": "^27.2.2"
+    "@babel/preset-typescript": "^7.15.0"
   }
 }
