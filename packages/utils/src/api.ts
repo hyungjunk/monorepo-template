@@ -10,7 +10,7 @@ export function useAsyncDataEffect<T>(
   getData: () => Promise<T>,
   options: {
     stateName: string;
-    otherStatesToMonitor?: unknown[];
+    otherStatesToMonitor?: any[];
     setter: (arg: T) => void;
   }
 ): void {

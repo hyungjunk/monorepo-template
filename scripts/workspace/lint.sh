@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
 echo "┏━━━ 🕵️‍♀️ LINT: eslint src --ext ts,js,tsx,jsx ━━━━━━━"
-yarn lerna run lint --stream --concurrency 1
+# it is also okay to use 'yarn lerna ..'
+lerna run lint --stream --concurrency 1
