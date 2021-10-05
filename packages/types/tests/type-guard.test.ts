@@ -5,7 +5,7 @@ describe("isChannel() tests", function () {
     expect(
       isChannel({
         id: "123",
-        teamId: "12gh",
+        teamId: "12ghh",
         description: "channel description",
         iconUrl: "",
         messages: [],
