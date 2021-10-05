@@ -78,16 +78,11 @@ describe("isTypedArray() tests", function () {
     expect(isTypedArray([], (x: any): x is any => true)).toEqual(true);
   });
   test("homogenous array [1, 2, 3]", () => {
-    expect(
-      isTypedArray([1, 2, 3], (x): x is number => typeof x === "number")
-    ).toEqual(true);
+    expect(isTypedArray([1, 2, 3], (x): x is number => typeof x === "number")).toEqual(true);
   });
   test("mixed array [1, 'a', 3]", () => {
     expect(
-      isTypedArray(
-        [1, "a", 3],
-        (x): x is number => ["number"].indexOf(typeof x) >= 0
-      )
+      isTypedArray([1, "a", 3], (x): x is number => ["number"].indexOf(typeof x) >= 0)
     ).toEqual(false);
   });
 });

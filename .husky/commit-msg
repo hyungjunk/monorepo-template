@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "Running commit message hook <commitlint GIT_COMMIT_MESSAGE>"
+echo "If you're not happy with the commitlint rule, see the commitlint.config.js file in the root"
+yarn commitlint --edit $1
