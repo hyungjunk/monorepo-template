@@ -5,7 +5,6 @@
   "repository": "git@github.com:hyungjunk/monorepo-template.git",
   "author": "Mike North <michael.l.north@gmail.com>",
   "license": "BSD-2-Clause",
-  "private": true,
   "workspaces": [
     "packages/*"
   ],
@@ -38,5 +37,8 @@
   "volta": {
     "node": "14.17.6",
     "yarn": "1.22.11"
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873"
   }
 }
