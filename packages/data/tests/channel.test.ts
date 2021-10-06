@@ -13,7 +13,7 @@ mockedApiCall.mockResolvedValue({
 });
 
 describe("getChannelById() tests", function () {
-  test("fetching a single team", async (done) => {
+  test("fetching a single team", async () => {
     expect(mockedApiCall.mock.calls.length).toBe(0);
     const pr = getChannelById("14");
     let resolvedVal: unknown;
@@ -31,6 +31,5 @@ describe("getChannelById() tests", function () {
       description: "The Next Generation Of Recruiting. Find top talents today!",
       teamId: "linkedin",
     });
-    done();
   });
 });

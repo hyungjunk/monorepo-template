@@ -4,6 +4,7 @@
   "main": "index.js",
   "repository": "git@github.com:hyungjunk/monorepo-template.git",
   "author": "Mike North <michael.l.north@gmail.com>",
+  "private": true,
   "license": "BSD-2-Clause",
   "workspaces": [
     "packages/*"
@@ -37,8 +38,5 @@
   "volta": {
     "node": "14.17.6",
     "yarn": "1.22.11"
-  },
-  "publishConfig": {
-    "registry": "http://localhost:4873"
   }
 }

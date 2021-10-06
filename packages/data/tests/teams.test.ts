@@ -34,7 +34,7 @@ mockedApiCall.mockImplementation(async (path, _init) => {
 });
 
 describe("getAllTeams() tests", function () {
-  test("fetching all teams", async (done) => {
+  test("fetching all teams", async () => {
     expect(mockedApiCall.mock.calls.length).toBe(0);
     const pr = getAllTeams();
     let resolvedVal: unknown;
@@ -69,6 +69,5 @@ describe("getAllTeams() tests", function () {
         channels: [],
       },
     ]);
-    done();
   });
 });
